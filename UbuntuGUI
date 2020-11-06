@@ -1,0 +1,2 @@
+docker build -t gui-app .
+docker run --privileged --net=host --volume="/run/user/1000/.mutter-Xwaylandauth.QJSWT0:/root/.Xauthority:rw" --volume="/dev/bus/usb:/dev/bus/usb" --env=DISPLAY gui-app
