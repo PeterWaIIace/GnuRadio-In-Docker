@@ -13,6 +13,7 @@ RUN apt-get install -y gr-limesdr
 RUN apt-get install -y gqrx-sdr
 RUN apt-get install -y xterm
 ARG DEBIAN_FRONTEND=interactive
+COPY ./start.sh /
 RUN adduser radioop
-RUN su radioop
-CMD ["/usr/bin/xterm"]
+RUN echo '*' > /etc/mdns.allow
+ENTRYPOINT ["/start.sh"]
