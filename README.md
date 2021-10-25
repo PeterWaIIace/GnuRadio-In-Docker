@@ -1,5 +1,5 @@
-# GROD
-GNURadio on Docker - run Gnuradio anywhere
+# GNURadio in Docker
+GNURadio in Docker - run Gnuradio anywhere
 
 #How to start:
 
